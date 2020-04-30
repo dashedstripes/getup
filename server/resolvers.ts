@@ -1,7 +1,9 @@
 import standupResolvers from "./api/standups";
+import worklogResolvers from "./api/worklogs";
 
 const resolvers = {
-  ...standupResolvers
+  ...standupResolvers,
+  ...worklogResolvers
 };
 
 export default resolvers;

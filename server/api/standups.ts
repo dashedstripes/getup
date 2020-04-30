@@ -1,7 +1,8 @@
 import standup from '../services/standups';
 
 async function createStandup({data}) {
-  return await standup.create(data);
+  const dataToSubmit = standup.build(data.content);
+  return await standup.create(dataToSubmit);
 }
 
 async function getStandups() {

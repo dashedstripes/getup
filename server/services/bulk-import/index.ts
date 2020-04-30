@@ -1,9 +1,9 @@
 import { Standup } from '../standups/standup';
-import { create } from '../standups/repo';
+import standup from '../standups';
 
-function importStandups(standups: Standup[]) {
-  standups.forEach((standup: Standup) => {
-    create(standup);
+function importStandups(data: Standup[]) {
+  data.forEach((item: Standup) => {
+    standup.create(item);
   });
 }
 
