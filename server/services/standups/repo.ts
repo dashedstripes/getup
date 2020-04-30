@@ -1,15 +1,14 @@
 import { Standup } from "./standup";
-import model from './model';
 
-async function create(standup: Standup): Promise<Standup[]> {
-  return await model.create({ content: standup.content});
+function create(model) {
+  return async (standup: Standup) => await model.create(standup);
 }
 
-async function findAll() {
-  return await model.findAll();
+function findAll(model) {
+  return async () => model.findAll();
 }
 
-export {
+export = {
   create,
   findAll
 }
