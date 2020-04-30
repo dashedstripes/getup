@@ -3,10 +3,6 @@ export interface Standup {
 }
 
 function build(content: string): Standup {
-  if(content === '') {
-    throw new Error('Content cannot be blank!');
-  }
-
   return {
     content
   }

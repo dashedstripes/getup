@@ -23,6 +23,4 @@ StandupModel.init({
   tableName: 'standups',
 });
 
-export default {
-  findAll: () => StandupModel.findAll()
-};
+export default StandupModel
