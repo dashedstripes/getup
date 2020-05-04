@@ -1,5 +1,5 @@
 import { Model, DataTypes } from "sequelize";
-import sequelize from '../../loaders/sequelize';
+import sequelize from '../sequelize/sequelize';
 
 class StandupModel extends Model {
   public id!: number;

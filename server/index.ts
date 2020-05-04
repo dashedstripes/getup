@@ -22,4 +22,4 @@ app.use(
 
 app.get('*', (_, res) => res.sendStatus(200));
 
-export default app;
+app.listen(4000, () => console.log('http://localhost:4000'));

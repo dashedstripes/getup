@@ -1,4 +1,4 @@
-import standup from '../services/standups';
+import standup from '@getup/core/standups';
 
 async function createStandup({data}) {
   const dataToSubmit = standup.build(data.content);
